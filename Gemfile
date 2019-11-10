@@ -5,8 +5,11 @@ ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
-# Use postgresql as the database for Active Record
-gem 'sqlite3', '>=1.3.9'
+# Use SQLlite for development but --without sqlite3 for heroku deployment
+group :sqlite3 do
+  gem 'sqlite3', '>=1.3.9'
+end
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -53,6 +56,7 @@ group :test do
   gem 'mini_backtrace',     '>=0.1.3'
   gem 'guard-minitest',     '>=2.3.1'
 end
+
 group :production do
   gem 'pg', '>= 0.18', '< 2.0'
 
