@@ -10,7 +10,7 @@ gem 'bootstrap-sass',       '>=3.2.0.0'
 group :sqlite3 do
   gem 'sqlite3', '>=1.3.9'
 end
-
+gem 'rails-controller-testing'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
