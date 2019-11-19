@@ -6,6 +6,7 @@ ruby '2.6.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 gem 'bootstrap-sass',       '>=3.2.0.0'
+gem 'bcrypt',               '>=3.1.7'
 # Use SQLlite for development but --without sqlite3 for heroku deployment
 group :sqlite3 do
   gem 'sqlite3', '>=1.3.9'
